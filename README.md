@@ -1,3 +1,3 @@
 # armin-rezaiean.github.io
 
-Personal websit code
+Code and assets associated with my personal website
