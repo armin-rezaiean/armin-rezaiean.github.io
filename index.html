@@ -7,6 +7,17 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="/assets/favicon.png" type="image/png">
+
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
+		<script src="assets/js/typed.js"></script>
+		<script>
+		  $(function(){
+		      $(".typing").typed({
+		        strings: ["^2000 Hi! I'm a Computer Engineering <br> student studying at the <br> University of British Columbia."],
+		        typeSpeed: 50
+		      });
+		  });
+		</script>
 	</head>
 	<body class="is-loading">
 
@@ -18,7 +29,7 @@
 						<header>
 							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
 							<h1>Armin Rezaiean-Asel</h1>
-							<p>Computer Engineering Student</p>
+							<span class="typing"></span>
 						</header>
 						
 						<footer>
