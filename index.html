@@ -13,7 +13,7 @@
 		<script>
 		  $(function(){
 		      $(".typing").typed({
-		        strings: ["^2000 I'm a computer engineer <br> > Interests: tech, business, public policy <br> > Check out my Linkedin for more info"],
+		        stringsElement: $('#typed-strings'),
 		        typeSpeed: 50
 		      });
 		  });
@@ -33,7 +33,11 @@
 							<h1>Armin Rezaiean-Asel</h1>
 							<!--<a href="projects.html">Projects<br></a>
 							<a href="projects.html">Research<br></a>-->
-							> <span class="typing"></span> 
+							> <span class="typing"></span>
+							
+							<div id="typed-strings">
+							    <p>^2000 I'm a computer engineer <br> > Interests: tech, business, public policy <br> > Check out my <a href="https://www.linkedin.com/in/arminrezaieanasel" target="_blank">LinkedIn</a> for more info</p>
+							</div>
 						</header>
 						
 						<footer>
