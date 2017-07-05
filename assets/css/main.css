@@ -167,6 +167,8 @@
 
 	strong, b {
 		color: #313f47;
+		font-weight: bold;
+		font-size: 13px;
 	}
 
 	em, i {
@@ -877,3 +879,42 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+/* Experience items */
+	
+	#experience {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#exp-img {
+		width: 10%;
+		height: 100%;
+		float: left;
+		padding-right: 4em;
+		display: block;
+	}
+
+	#text {
+		font-size: 12px;
+		width: 90%;
+		//height: 50px;
+		float: none;
+	}
+
+	@media screen and (max-width: 480px) {
+		
+		#experience {
+			width: 100%;
+		}
+
+		#exp-img {
+			display: none;
+		}
+
+		#text {
+			width: 300px;
+		}
+
+	}
+
