@@ -789,6 +789,12 @@
 
 		}
 
+		@media screen and (min-width: 600px) {
+			#main {
+				min-width: 50em; 
+			}
+		}
+
 		body.is-loading #main {
 			opacity: 0;
 			-moz-transform: rotateX(15deg);
