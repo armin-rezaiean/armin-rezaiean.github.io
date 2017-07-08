@@ -908,6 +908,14 @@
 		float: none;
 	}
 
+	#text2 {
+		font-size: 10px;
+		width: 100%;
+		//height: 50px;
+		float: none;
+		margin-left:10%;
+	}
+
 	@media screen and (max-width: 480px) {
 		
 		#experience {
@@ -919,7 +927,12 @@
 		}
 
 		#text {
-			width: 250px;
+			width: 280px;
+		}
+
+		#text2 {
+			width: 280px;
+			margin-left:0%;
 		}
 
 	}
