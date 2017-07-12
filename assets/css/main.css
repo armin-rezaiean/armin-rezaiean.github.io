@@ -910,8 +910,9 @@
 	}
 
 	#text2 {
-		font-size: 10px;
+		font-size: 11px;
 		width: 100%;
+		font-weight: 900;
 		//height: 50px;
 		float: none;
 		margin-left:10%;
