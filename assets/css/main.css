@@ -463,6 +463,36 @@
 			display: none;
 		}
 
+	.fa-linkedin {
+	    background: #007BB5;
+	    color: white;
+	}
+
+	.fa-github {
+	    background: black;
+	    color: white;
+	}
+
+	.fa-medium {
+	    background: #02B875;
+	    color: white;
+	}
+
+	.fa-twitter {
+	    background: #55ACEE;
+	    color: white;
+	}
+
+	.fa-instagram {
+	    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	    color: white;
+	}
+
+	.fa-envelope {
+	    background: #3B5998;
+	    color: white;
+	}
+
 /* List */
 
 	ol {
@@ -521,7 +551,7 @@
 					width: 3.75em;
 					height: 3.75em;
 					border-radius: 100%;
-					border: solid 1px #c8cccf;
+					//border: solid 1px #c8cccf;
 					line-height: 3.75em;
 					overflow: hidden;
 					text-align: center;
@@ -540,11 +570,12 @@
 
 					ul.icons li a:before {
 						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						//text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #7483ff, -1.25px 0px 0px #7483ff, 0px 1.25px 0px #7483ff, 0px -1.25px 0px #7483ff;
+						//text-shadow: 1.25px 0px 0px #7483ff, -1.25px 0px 0px #7483ff, 0px 1.25px 0px #7483ff, 0px -1.25px 0px #7483ff;
+						opacity: 0.7;
 					}
 
 					ul.icons li a:before {
@@ -560,7 +591,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #7483ff;
+						//border-color: #7483ff;
 					}
 
 			@media screen and (max-width: 480px) {
