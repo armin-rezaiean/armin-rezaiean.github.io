@@ -1,83 +1,105 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Armin Rezaiean-Asel</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta content="Armin Rezaiean-Asel's Personal Website" property="og:title">
-		<meta content="Learn more about my experiences and interests." property="og:description">	
-		<meta content="images/avatar_ogimage.jpg" property="og:image">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="/assets/favicon.ico" type="image/ico">
-		<script src="assets/js/jquery-3.1.1.min.js"></script>
-	</head>
-	<body class="is-loading">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" height="175" width="175" alt=""/></span>
-							<h1>Armin Rezaiean-Asel</h1>
-							> I'm a computer engineer working as a program manager at Microsoft
-							<br> > My interests span technology, business, and public policy 
-							<br> > NTRP ranked tennis player: #3 in British Columbia, #15 in Canada
-							<br> > Learn more about my
-							<br> --> <a href="education">Education</a> 
-							<br> --> <a href="work">Work Experience</a> 
-							<br> --> <a href="research-teaching">Research and Teaching</a>
-							<br> --> <a href="public-speaking">Public Speaking</a>  
-							<br> --> <a href="entrepreneurship">Entrepreneurial Ventures</a>
-							<br>
-							<br> For more detail, please see my <a href="https://www.linkedin.com/in/arminrezaieanasel" target="_blank">LinkedIn</a>
-						</header>
-						
-						<footer>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/arminrezaieanasel" target="_blank" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="https://github.com/armin-rezaiean" target="_blank" class="fa-github">Github</a></li>
-								<li><a href="https://medium.com/@armin.rezaiean.asel" target="_blank" class="fa-medium">Medium</a></li>
-								<li><a href="https://twitter.com/armin_rezaiean" target="_blank" class="fa-twitter">Twitter</a></li>
-								<li><a href="https://www.instagram.com/armin.rezaiean" target="_blank" class="fa-instagram">Instagram</a></li>
-								<li><a href="mailto:armin.rezaiean.asel@gmail.com" target="_blank" class="fa-envelope">Email</a></li>
-							</ul>
-						</footer>
-					</section>
+        .container {
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Armin Rezaiean-Asel</li>
-						</ul>
-					</footer>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-			</div>
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
 
-		<!-- Scripts -->
+        .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
 
-			<!-- Google analytics tracking -->
-			<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
 
-			  ga('create', 'UA-87255663-1', 'auto');
-			  ga('send', 'pageview');
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
 
-			</script>
+        .message {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .icon {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚧</div>
+        <h1>Under Construction</h1>
+        <p class="subtitle">Something amazing is coming soon!</p>
+        <div class="message">
+            <p>This website is currently being built. Check back soon for updates.</p>
+        </div>
+    </div>
+</body>
 </html>
+
