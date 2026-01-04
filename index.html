@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Armin Rezaiean-Asel</title>
     <style>
         * {
             margin: 0;
@@ -13,93 +13,259 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.6;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            padding: 20px;
         }
 
         .container {
-            text-align: center;
-            max-width: 600px;
-            animation: fadeIn 1s ease-in;
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 40px 60px;
+            gap: 30px;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Left Sidebar */
+        .sidebar {
+            flex-shrink: 0;
+            width: 200px;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 2px solid #f0f0f0;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .social-links {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        .social-links li {
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        .social-links a {
+            font-size: 16px;
+            color: #666;
+            text-decoration: none;
+            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .social-links a:hover {
+            color: #000;
+        }
+
+        .social-links svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        /* Center Content Area */
+        .content {
+            flex: 1;
+            max-width: 650px;
+        }
+
+        .content-section {
+            display: block;
+            margin-bottom: 60px;
         }
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
         }
 
-        .subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.6;
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            line-height: 1.3;
         }
 
-        .icon {
-            font-size: 4rem;
-            margin-bottom: 2rem;
-            animation: pulse 2s ease-in-out infinite;
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .intro {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 32px;
+            color: #1a1a1a;
+        }
+
+        .work-item, .education-item {
+            margin-bottom: 24px;
+        }
+
+        .work-item h3, .education-item h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .work-item .meta, .education-item .meta {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .work-item p, .education-item p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content ul li {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .content ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+                padding: 80px 20px 40px;
             }
-            50% {
-                transform: scale(1.1);
-            }
-        }
 
-        .message {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-top: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+            .sidebar {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
+            .photo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 0;
             }
-            
-            .subtitle {
-                font-size: 1rem;
+
+            .social-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
             }
-            
-            .icon {
-                font-size: 3rem;
+
+            .social-links li {
+                margin-bottom: 0;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Under Construction</h1>
-        <p class="subtitle">Something amazing is coming soon!</p>
-        <div class="message">
-            <p>This website is currently being built. Check back soon for updates.</p>
-        </div>
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="photo">
+                <img src="photo.jpg" alt="Armin Rezaiean-Asel">
+            </div>
+            <ul class="social-links">
+                <li>
+                    <a href="https://x.com/armin_rez" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/arminasel" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Center Content Area -->
+        <main class="content">
+            <section class="content-section">
+                <p>
+                    I'm Armin Rezaiean-Asel, a builder working at the intersection of emerging technology and human learning. I'm a Knight-Hennessy Scholar at Stanford pursuing both an MS in Management Science & Engineering and a Master of Public Policy (science & technology policy). Before Stanford, I studied Computer Engineering at the University of British Columbia as a Loran Scholar.
+                </p>
+
+                <p>
+                    Across Microsoft and Coinbase, I've led product on developer-facing platforms, where APIs and SDKs have to be rock-solid because real teams ship real deployments on top of them. At Microsoft, I worked across mixed reality and spatial computing, helping ship platform services like Azure Object Anchors and Azure Spatial Anchors, and leading SDK/tool creation to expand the developer ecosystem. Two examples I love: Toyota's use of Azure Object Anchors for markerless, on-the-job guidance (<a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2021/05/05/improve-on-the-job-guidance-with-dynamics-365-guides-and-azure-object-anchors/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">overview here</a>), and Microsoft's work supporting the NASA Orion / Artemis ecosystem, where HoloLens 2 has been used in Orion spacecraft assembly contexts (<a href="https://news.microsoft.com/source/features/innovation/hololens-2-nasa-orion-artemis/" target="_blank" rel="noopener noreferrer">story here</a>).
+                </p>
+
+                <p>
+                    At Coinbase, I worked across crypto infrastructure - owning liquidity and wallet-balancing systems managing $100B+ in assets - and helped launch a 0-to-1 Cloud Developer Platform, again centered on SDKs and APIs that developers used in production. Along the way I've co-invented multiple pending patents, including work on ML-driven blockchain analysis and simulation tooling. Two examples are <a href="https://patentimages.storage.googleapis.com/97/16/da/cbcaceb3f97d6a/US20240152911A1.pdf" target="_blank" rel="noopener noreferrer">US20240152911A1</a> and <a href="https://patentimages.storage.googleapis.com/1f/e6/93/877056269d54df/US20250168001A1.pdf" target="_blank" rel="noopener noreferrer">US20250168001A1</a>.
+                </p>
+
+                <p>
+                    Before Microsoft, I co-founded Curos Labs, a bootstrapped wearable + app for tracking chronic pain that we took from prototype to <a href="https://www.bctechnology.com/news/2017/3/7/Pain-Management-Venture-Curos-Labs-Takes-Top-Prize-in-Life-Sciences-Startup-Competition.cfm" target="_blank" rel="noopener noreferrer">competition wins</a>. In undergrad, I also chased curiosity competitively, winning the Western Engineering Competition (finishing 1st in Western Canada) and subsequently competing at the Canadian Engineering Competition national finals with a presentation analyzing the feasibility and potential of 3D liver printing technology, a topic I learned from scratch to satisfy my curiosity.
+                </p>
+
+                <p>
+                    My policy interest started through student governance and civic work and continued through global-facing experiences, from a Brussels-based Council of Europe internship to collaborating with UNESCO and Peace Child International on research about empowering disadvantaged youth through access to education (<a href="report.pdf" target="_blank" rel="noopener noreferrer">report PDF here</a>), and being recognized as a British Council Global Changemaker.
+                </p>
+
+                <p>
+                    Teaching and learning have been a constant through-line for me: I've been a Course Assistant for Stanford's MS&E 288 (Managing Innovation and Driving Adoption of Frontier Technologies) and previously TA'd courses spanning computation in engineering design, linear algebra, and algorithms/data structures. Earlier, I worked with Pearson Education's senior leadership as a Student Board Member, consulting on the design of intelligent learning software. Through that role I was selected as an Aspen Ideas Festival Scholar (now called an Aspen Ideas Festival Fellow) to represent the company among leaders in education, technology, and policy. That passion for learning is what drives what I’m building now: products and agents that help people learn faster and deeper. Not just by explaining, but by making exploration and curiosity feel inevitable.
+                </p>
+            </section>
+
+        </main>
     </div>
+
 </body>
 </html>
-
